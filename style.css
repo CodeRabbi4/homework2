@@ -1,0 +1,876 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+/* Header Start*/
+header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .logo{
+    margin-left: -70px;
+}
+header .nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 100px;
+}
+header ul li{
+    position: relative;
+    font-size: 14px;
+    padding: 0px 4px;
+    
+}
+.nav #menu,
+.nav .mi{
+    display: none;
+}
+.nav ul li #drop,
+.nav ul ul li #sub{
+    display: none;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li a{
+    text-decoration: none;
+    color:rgba(0, 0, 0,0.6);
+    padding: 5px 10px;
+}
+header ul li a:hover{
+    color: black;
+    transition: all ease .3s;
+}
+    
+header ul li a .material-symbols-outlined{
+    font-size: 15px;
+    position: relative;
+    top: 2px;
+
+}
+header ul ul{
+    display: block;
+    position: absolute;
+    top: 125%;
+    background-color: white;
+    width: 170px;
+    height: 130px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,0.2);
+    padding: 12px 10px;
+    display: none;
+}
+header ul ul li{
+    padding: 6px 0px;
+}
+header ul ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: all cubic-bezier(.17,.67,.58,.23) 1s;
+}
+header ul ul li a{
+    color: black;
+}
+header ul ul li a span{
+    margin-left: 40px;
+}
+header ul ul ul{
+    position: absolute;
+    left: 101%;
+    top: 0;
+    display: none;
+    opacity: 1;
+    visibility: hidden;
+}
+.nav .btn{
+    text-decoration: none;
+    background-color: rgb(8,17,88);
+    color: #FBB244;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 20px;
+    position: absolute;
+    right:13%;
+}
+.nav .btn:hover{
+    border: 2px solid #F4F3F9;
+    background-color:white;
+    color: black;
+}
+/* Header End */
+
+/* Section 1 Start */
+.section1{
+    width: 100%;
+    height: 90vh;
+}
+.section1 .conatiner{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.section1 .conatiner .context{
+    width: 50%;
+    height: 60vh;
+    margin-top: 80px;
+}
+.conatiner .context h5{
+    font-size: 11px;
+    color: #FBC067;
+    background-color: #FEF0DA;
+    display: inline;
+    padding: 6px 18px;
+    border-radius: 20px;
+}
+.context h1{
+    font-size: 40px;
+    color:#081158;
+    font-family:Montserrat, sans-serif;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.context P{
+    width: 78%;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0,0.5);
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+.context .conbtn{
+    text-decoration: none;
+    background-color: rgb(14,23,92);
+    color: white;
+    padding: 16px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 1px solid rgb(14,23,92);
+}
+.context .conbtn:hover{
+    background-color: white;
+    color: rgb(14,23,92);
+    border: 1px solid rgb(14,23,92);
+}
+.context .conbtn1{
+    margin-left: 10px;
+    text-decoration: none;
+    background-color:white ;
+    color:rgb(14,23,92);
+    border: 1px solid rgb(14,23,92);
+    padding: 16px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+.context .conbtn1:hover{
+    background-color: rgb(14,23,92);
+    color: white;
+}
+.section1 .conatiner .contimg{
+    width: 50%;
+    height: 60vh;
+}
+.section1 .conatiner .contimg img{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+/* Section 1 End */
+
+/* FEATURES Part Start */
+.featursection{
+    width: 100%;
+    height: 80vh;
+}
+.features {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.features .fetext{
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+.fetext h6{
+    display: inline;
+    color: #fbbb5c;
+    background-color: #FEF0DA;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+.fetext h1{
+    color:#081158;
+    font-size: 40px;
+    margin-top: 15px;
+}
+.fetext p{
+    font-size: 15px;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 25px;
+    line-height: 20px;
+    color: rgba(0, 0, 0,0.5);
+}
+.feicon{
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.feicon .icona{
+    width: 300px;
+    margin: 10px 70px;
+    position: relative;
+}
+.icona .col{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(253,216,161,0.8);
+    z-index: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+}
+.icona .material-symbols-outlined{
+    font-size: 60px;
+    color: rgba(0, 0, 0,0.6);
+    z-index: 1;
+}
+.icona i{
+    font-size: 50px;
+    color: rgba(0, 0, 0,0.6);
+    z-index: 1;
+}
+.icona h2{
+    margin-top: 15px;
+    font-size: 19px;
+    color: rgba(0, 0, 0,0.7);
+    font-weight: bolder;
+}
+.icona p{
+    margin: 16px auto;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0,0.5);
+    width: 90%;
+    line-height: 20px;
+}  
+/* FEATURES Part End */
+
+/* About Section Start */
+.aboutsection{
+    width: 100%;
+    height: 90vh;
+}
+.about{
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .abimg{
+    width: 55%;
+    height: 90%;
+    margin-left: 40px;
+}
+.about .abimg img{
+    width: 100%;
+}
+.about .abtext{
+    width: 30%;
+    height: 90%;
+    margin-left: 120px;
+}
+.abtext h6{
+    padding: 5px 15px;
+    color: rgb(251,187,90);
+    background-color: rgb(254,240,218);
+    display: inline;
+    border-radius: 20px;
+}
+.abtext h1{
+    font-size: 42px;
+    color: rgb(8,17,88);
+    margin-top: 10px;
+}
+.abtext p{
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(0, 0, 0,0.5);
+}
+.abtext ul{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.about ul li{
+    font-size: 15px;
+    color: rgba(0, 0, 0,0.5);
+    line-height: 20px;
+}
+.abtext ul li i{
+    color:rgba(0, 0, 0,0.5);
+    margin-right: 10px;
+}
+.about .abbtn{
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #081158;
+    color: white;
+    border:1px solid #081158;
+}
+.abbtn:hover{
+    background-color: white;
+    color: #081158;
+    transition: all ease-in .2s;
+}
+/* About Section End */
+
+/* servicesection Start */
+.servicesection{
+    width: 100%;
+    height: 100vh;
+}
+.stext{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+.stext h6{
+    padding: 5px 15px;
+    color: rgb(251,187,90);
+    background-color: rgb(254,240,218);
+    display: inline;
+    border-radius: 20px;
+}
+.stext h1{
+    font-size: 42px;
+    color: rgb(8,17,88);
+    margin-top: 10px;
+}
+.seraera{
+    width: 60%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.seraera .ser{
+    display: flex;
+    width: 420px;
+    height: 180px;
+    border: 1px solid rgba(0, 0, 0,0.1);
+    margin: 16px 12px;   
+    position: relative; 
+}
+.seraera .ser .col{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 0;
+    background-color: rgb(252,221,169);
+}
+.seraera .ser .material-symbols-outlined{
+    font-size: 60px;
+    padding: 35px 20px;
+    color: rgba(0, 0, 0,0.8);
+    z-index: 1;
+}
+.seraera .ser i {
+    font-size: 50px;
+    padding: 40px 20px;
+    color: rgba(0, 0, 0,0.8);
+    z-index: 1;
+}
+.ser .sertext h3{
+    margin-top: 25px;
+    color: rgba(0, 0, 0, 0.8);
+    
+}
+.ser .sertext p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    line-height:20px;
+}
+/* servicesection End */
+
+/* testimonal part Start */
+.testimonal{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(248,249,250);
+    margin-top: 50px;
+}
+.testtext{
+    text-align: center;
+    height: 280px;
+    padding: 100px 0px;
+}
+.testtext h6{
+    padding: 5px 15px;
+    color: rgb(251,187,90);
+    background-color: rgb(254,240,218);
+    display: inline;
+    border-radius: 20px;  
+}
+.testtext h1{
+    font-size: 42px;
+    color: rgb(8,17,88);
+    margin-top: 10px;
+}
+.testtext p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    line-height:20px;
+}
+.tearea{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+}
+.tebox{
+    width: 440px;
+    height: 270px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0,0.1);
+    border-radius:5px;
+    margin: 3px 5px;
+    padding: 30px 40px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+.tebox:hover{
+    border: 1px solid rgba(0, 0, 0,0.5);
+}
+.tebox p{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 30px;
+}
+.tebox .tbi{
+    display: flex;
+    padding: 50px 0px;
+}
+.tebox .tbi figure{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.tbi figure img{
+    width: 100%
+}
+.tbi span{
+    padding: 0px 20px;
+}
+.tbi span h4{
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.5px;
+}
+.tbi span p{
+    font-size: 14px;
+}
+/* testimonal part End */
+
+/* Footer Start */
+footer{
+    width: 100%;
+    height: 55vh;
+}
+.frrow{
+    width: 70%;
+    height: 350px;
+    display: flex;
+    margin: 0 auto;
+    justify-self: center;
+    align-items: center;
+    padding: 100px 0px 0px 0px;
+    
+}
+.frrow div h5{
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.9);
+}
+.frrow .rw1{
+    width: 450px;
+    height: 200px;
+}
+.rw1 p{
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 35px;
+}
+.rw1 span{
+    padding: 10px 13px;
+    background-color: rgb(8,17,88);
+    border-radius: 50%;
+}
+.rw1 span a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.rw2, .rw3{
+    width: 200px;
+    height: 200px;
+    padding: 0px 20px;
+}
+
+.rw2 ul, .rw3 ul, .rw4 ul{
+    margin:20px 0px;
+    list-style: none;
+}
+.rw2 ul li, .rw3 ul li, .rw4 ul li{
+    padding:6px 0px;
+}
+.rw2 ul li a, .rw3 ul li a, .rw4 ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+.rw2 ul li a:hover, .rw3 ul li a:hover, .rw4 ul li a:hover{
+    color: black;
+    transition: all ease .2s;
+}
+.rw4{
+    height: 200px;
+}
+.rw4 ul li i{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    padding-right: 15px;
+}
+footer .copy{
+    text-align: center;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.copy i{
+    color: rgb(214, 34, 34);
+}
+.copy p a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+.copy p a:hover{
+    color: black;
+    transition: all ease .3s;
+}
+/* Footer End */
+
+
+/* Mobile View */
+@media (max-width:800px){
+    header{
+        width: 100%;
+        height: 80px;
+    }
+    header .logo{
+        margin: 0;
+    }
+    .nav .btn{
+        display: none;
+    }
+    header .nav{
+        display: block;
+    }
+    .nav .mi{
+        display: block;
+        font-size: 25px;
+        margin-left: 60px;
+        color: black;
+    
+    }
+    header .nav ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        left: 100%;
+        top: 10%;
+        background-color: rgb(255, 254, 254);
+        box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.2);
+    }
+    header .nav #menu:checked ~ ul{
+        left: 0;
+    }
+    header .nav ul li{
+        padding: 20px 20px;
+    }
+    header .nav ul li a{
+        font-size: 18px;
+    }
+    
+    
+    .nav ul li #drop:checked ~ .mu{
+        position:relative;
+        top: 5%;
+        left: 1%;
+        width: 56%;
+        height: 10%;
+    
+    }
+    .nav ul .subm{
+        width:160px;
+        height: 130px;
+        position: absolute;
+        left: -200%;
+    }
+    .nav ul ul li #sub:checked ~ .subm{
+        left: 88%;
+        transition: all ease .000001s;
+    }
+    .nav ul ul li{
+        padding: 8px 0px;
+        margin: 0;
+    }
+    .nav ul ul li a{
+        font-size: 16px;
+    }
+    .section1{
+        width: 100%;
+        height: 100vh;
+    }
+    .section1 .conatiner{
+        width: 90%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .section1 .conatiner .context{
+        width: 100%;
+        height: 48vh;
+    }
+    .context h1 {
+        font-size: 32px;
+    }
+    .context P {
+        width: 95%;
+        font-size: 13px;
+    }
+    .context .conbtn,
+    .context .conbtn1 {
+        font-size: 14px;
+        padding: 13px 15px;
+    }
+    .section1 .conatiner .contimg{
+        width: 100%;
+        height: auto;
+    }
+    .featursection {
+        width: 100%;
+        height: 130vh;
+    }
+    .features {
+        width: 95%;
+        height: 100%;
+    }
+    .features .fetext {
+        width: 330px;
+    }
+    .fetext h1 {
+        color: #081158;
+        font-size: 35px;
+    }
+    .fetext p {
+        font-size: 13px;
+        width: 95%;
+        margin: 15px auto;
+    }
+    .feicon {
+        width: 95%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .feicon .icona {
+        width: 100%;
+        margin: 12px auto;
+        padding: 10px 0px;
+    }
+    .icona .material-symbols-outlined {
+        font-size: 50px;
+    }
+    .icona i {
+        font-size: 40px;
+    }
+    .aboutsection {
+        width: 100%;
+        height: 100vh;
+    }
+    .about {
+        width: 95%;
+        height: 80vh;
+        display: block;
+        margin: 0 auto;
+    }
+    .about .abimg{
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .about .abtext{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .abtext h1 {
+        font-size: 34px;
+    }
+    .abtext p {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .abtext ul {
+        margin-bottom: 35px;
+    }
+    .about .abbtn {
+        text-decoration: none;
+        padding: 9px 15px;
+    }
+    .servicesection {
+        width: 100%;
+        height: 185vh;
+    }
+    .stext {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .stext h1 {
+        font-size: 38px;
+    }
+    .seraera {
+        width: 85%;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+    .seraera .ser{
+        width: 100%;
+        height: 180px;
+        margin: 18px auto;
+    }
+    .ser .sertext p {
+        font-size: 12px;
+    }
+    .testimonal {
+        width: 100%;
+        height: 150vh;
+    }
+    .testtext {
+        text-align: center;
+        width: 95%;
+        height: 280px;
+        padding: 100px 0px;
+        margin: 0 auto;
+    }
+    .testtext h1 {
+        font-size: 38px;
+    }
+    .testtext p {
+        font-size: 13px;
+        width: 98%;
+        margin: 10px auto;
+        color: rgba(0, 0, 0, 0.5);
+        margin-top: 10px;
+        line-height: 17px;
+    }
+    .tearea {
+        width: 95%;
+        display: block;
+        margin: 20px auto;
+    }
+    .tebox {
+        width: 100%;
+        height: 235px;
+        margin: 15px auto;
+        padding: 30px 25px; 
+    }
+    .tebox p {
+        font-size: 15px;
+    }
+    .tebox .tbi {
+        padding: 35px 0px;
+    }
+    footer {
+        width: 100%;
+        height: 95vh;
+    }
+    .frrow {
+        width: 85%;
+        height: auto;
+        display: block;
+        padding:50px 0px;
+    }
+    .frrow .rw1 {
+        width: 100%;
+        height: 170px;
+    }
+    .rw1 p {
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .rw1 span {
+        padding: 6px 10px;
+    }
+    .rw1 span a {
+        font-size: 13px;
+    }
+    .rw2, .rw3 {
+        width: 100%;
+        height: 135px;
+        padding: 0;
+    }
+    .rw2 ul, .rw3 ul, .rw4 ul {
+        margin: 10px 0px;
+    }
+    .rw4 {
+        width: 100%;
+        height: 100px;
+    }
+    footer .copy {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+}
+/* Mobile View */
